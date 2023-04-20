@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class Str {
 
 	@Test
-		public void java() {
+		public void java_$java() {
 		String s = "Dhoni is good player";
 		String name = "sachin";
 		String word = "";
