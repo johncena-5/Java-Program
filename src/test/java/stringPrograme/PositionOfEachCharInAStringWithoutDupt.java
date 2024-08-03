@@ -14,12 +14,11 @@ public class PositionOfEachCharInAStringWithoutDupt {
 			
 		}
 		for (Character ch : set) {
-			int count=0;
 			for(int i=0;i<s.length();i++) {
 				
 				if(ch==st.charAt(i)) {
 					
-					System.out.println(ch +" "+(i+1));
+					System.out.println(ch +" "+(i));
 					break;
 				}
 			}

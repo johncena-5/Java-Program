@@ -22,6 +22,7 @@ public class CountDuplicateInAnArray {
 					count++;
 				}
 			}
+			if(count>1)
 			System.out.println(" number " + f + " repeating  " + count + " times ");
 		}
 	}

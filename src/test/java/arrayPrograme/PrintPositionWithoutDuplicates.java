@@ -1,6 +1,8 @@
 package arrayPrograme;
 
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.List;
 
 public class PrintPositionWithoutDuplicates {
 
@@ -12,14 +14,10 @@ public class PrintPositionWithoutDuplicates {
 
 			set.add(a[i]);
 		}
-		for (Integer in : set) {
-			int count = 0;
-			for (int i = 0; i < a.length; i++) {
-				if (in == a[i]) {
-					System.out.println(" position of " + in + "   "+i + "times");
-					break;
-				}
-			}
+		System.out.println(set);
+		List<Integer> list = new ArrayList<Integer>(set);
+		for(int i=0;i<list.size();i++) {
+			System.out.println(list.get(i)+" number is present in position of "+ i);
 		}
 	}
 }

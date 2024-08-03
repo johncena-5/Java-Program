@@ -6,14 +6,28 @@ public class AdditionOfTwoDigitInAString {
 		
 		
 		String s = "a11b12c2";
-		
-		for(int i=0;i<s.charAt(i);i++) {
+		String g ="";
+		int sum=0;
+		boolean flag=false;
+		for(int i=0;i<s.length();i++) {
 			
-			if(s.charAt(i)>='0'&&s.charAt(i+1)<='9') {
-				
+			if(Character.isDigit(s.charAt(i))) {
+				g=g+s.charAt(i);
+				flag=true;
+			}else {
+				if(flag) {
+					g=g+"-";
+					flag=false;
+				}
 			}
 		}
+		String[] d = g.split("-");
 
+		for(int i=0;i<d.length;i++) {
+			int a = Integer.parseInt(d[i]);
+			sum=sum+a;
+		}
+		System.out.println(sum);
 	}
 
 }

@@ -1,7 +1,5 @@
 package stringPrograme;
 
-import org.testng.annotations.Test;
-
 public class ReverseTheString {
 	
 	

@@ -17,7 +17,5 @@ public class SecondMaximumNumber {
 			}
 		}
 		System.out.println(a[a.length - 2]);
-
 	}
-
 }

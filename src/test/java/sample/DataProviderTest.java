@@ -1,7 +1,6 @@
 package sample;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
@@ -14,9 +13,9 @@ import org.testng.annotations.Test;
 public class DataProviderTest {
 
 	@Test(dataProvider = "demo")
-	public void m1(String faculty, String subject) {
+	public void m1(String faculty, String subject, String topic, String branch) {
 		
-		System.out.println(faculty+" "+subject);
+		System.out.println(faculty+" "+subject+" "+topic+" "+branch);
 	}
 
 	
@@ -28,7 +27,7 @@ public class DataProviderTest {
 		Sheet sh = wb.getSheet("Sheet1");
 		
 		int row = sh.getLastRowNum()+1;
-		short cell = sh.getRow(0).getLastCellNum();
+		int cell = sh.getRow(0).getLastCellNum();
 		
 		Object[][]obj=new Object[row][cell];
 		

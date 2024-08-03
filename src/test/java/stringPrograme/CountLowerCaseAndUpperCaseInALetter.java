@@ -4,7 +4,7 @@ public class CountLowerCaseAndUpperCaseInALetter {
 
 	public static void main(String[] args) {
 		
-		String s = "JaVa";
+		String s = "JaVa ClaSS";
 		int lowercase=0;
 		int uppercase=0;
 		
@@ -15,6 +15,8 @@ public class CountLowerCaseAndUpperCaseInALetter {
 				lowercase++;
 			}else if(s.charAt(i)>='A'&& s.charAt(i)<='Z') {
 				uppercase++;
+			}else {
+				
 			}
 		}
 		System.out.println("The number of upper letter "+uppercase);

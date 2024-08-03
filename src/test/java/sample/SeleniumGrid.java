@@ -25,11 +25,6 @@ public class SeleniumGrid {
 		driver.get("https://www.cricbuzz.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		
-		
-		
-
+	
 	}
-
 }

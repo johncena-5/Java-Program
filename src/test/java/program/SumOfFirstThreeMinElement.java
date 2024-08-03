@@ -26,6 +26,7 @@ public class SumOfFirstThreeMinElement {
 			}
 		}
 		System.out.println(fmin+" "+smin+" "+tmin);
+		System.out.println(fmin+smin+tmin);
 
 	}
 

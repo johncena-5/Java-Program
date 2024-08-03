@@ -13,7 +13,7 @@ public class Questions {
 		}
 		for(int i=0;i<s.length();i++) {
 			if(s.charAt(i)==' ') {
-				rev=rev.substring(0, i)+" "+rev.substring(i, rev.length());
+				rev=rev.substring(0, i)+" "+rev.substring(i);
 			}
 		}
 		System.out.println(rev);

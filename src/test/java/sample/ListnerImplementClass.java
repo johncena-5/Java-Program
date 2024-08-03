@@ -1,10 +1,5 @@
 package sample;
 
-import java.io.File;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -41,14 +36,14 @@ public class ListnerImplementClass implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		
 		
-		EventFiringWebDriver edriver = new EventFiringWebDriver();
-		File src = edriver.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./Screenshot/shot.png");
-		FileUtils.copyFile(src, dest);
-		
-		String path = dest.getAbsolutePath();
-		test.addScreenCaptureFromPath(path);
-		test.log(Status.FAIL, result.getThrowable());
+//		EventFiringWebDriver edriver = new EventFiringWebDriver();
+//		File src = edriver.getScreenshotAs(OutputType.FILE);
+//		File dest = new File("./Screenshot/shot.png");
+//		FileUtils.copyFile(src, dest);
+//		
+//		String path = dest.getAbsolutePath();
+//		test.addScreenCaptureFromPath(path);
+//		test.log(Status.FAIL, result.getThrowable());
 	}
 
 	@Override

@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mock.SelectTest">
+      <class name="sample.DataProviderTest">
         <methods>
-          <include name="demo"/>
-          <include name="m"/>
+          <include name="m1"/>
         </methods>
-      </class> <!-- mock.SelectTest -->
+      </class> <!-- sample.DataProviderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

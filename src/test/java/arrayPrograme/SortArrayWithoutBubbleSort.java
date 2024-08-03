@@ -1,26 +1,21 @@
 package arrayPrograme;
 
+import java.util.Arrays;
+
 public class SortArrayWithoutBubbleSort {
 
 	public static void main(String[] args) {
-		
-		int a []= {1,2,0,4,9};
-		int fmin=Integer.MAX_VALUE;
-		int b[]=new int[a.length];
-		int j=0;
-		for(int i=0;i<a.length;i++) {
-			
-			if(fmin>a[i]) {
-				
-				fmin=a[i];
-				b[j]=fmin;
+
+		int a[]= {1,6,3,0,-1};
+		for(int i=1;i<a.length;i++) {
+			int current=a[i];
+			int j=i-1;
+			while(j>=0&&a[j]>current) {
+				a[j+1]=a[j];
+				j--;
 			}
+			a[j+1]=current;
 		}
-		for(int i=0;i<b.length;i++) {
-			System.out.println(b[i]);
-		}
-		
-
+		System.out.println(Arrays.toString(a));
 	}
-
 }

@@ -1,7 +1,5 @@
 package program;
 
-import java.util.ArrayList;
-
 public class LengthOfStringWithoutUsingLengthMethod {
 
 	public static void main(String[] args) {

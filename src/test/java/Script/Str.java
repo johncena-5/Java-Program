@@ -9,9 +9,7 @@ public class Str {
 		String s = "Dhoni is good player";
 		String name = "sachin";
 		String word = "";
-		String full = s.replaceFirst("Dhoni", name);
 		
-		//System.out.println(full);
 		
 		String [] w = s.split(" ");
 		for(int i=0; i<w.length;i++) {
